@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/skillbridge_platform
+    username: skillbridge_admin
+    password: LocalDevSecurePassword2026
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    # We removed database-platform to let Hibernate auto-detect the perfect dialect
+    hibernate:
+      ddl-auto: update 
+    show-sql: true     
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false # Disables the warning to save database session memory leaks
+
+server:
+  port: 5000
