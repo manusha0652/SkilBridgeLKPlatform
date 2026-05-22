@@ -6,7 +6,6 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   jpa:
-    # We removed database-platform to let Hibernate auto-detect the perfect dialect
     hibernate:
       ddl-auto: update 
     show-sql: true     
@@ -15,5 +14,13 @@ spring:
         format_sql: true
     open-in-view: false # Disables the warning to save database session memory leaks
 
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+jwt:
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  expiration: 86400000
+
 server:
-  port: 5000
+  port: 8080
