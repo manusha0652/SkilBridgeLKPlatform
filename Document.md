@@ -177,7 +177,7 @@ skillbridge/
 │   ├── nginx.conf
 │   └── src/
 │       ├── api/
-│       │   ├── axiosInstance.js
+│       │   ├── axiosInstance.js 
 │       │   ├── authApi.js
 │       │   ├── jobsApi.js
 │       │   ├── bidsApi.js
